@@ -11,7 +11,11 @@ public class CharacterMovementController : MonoBehaviour
 
     #region properties
     private Vector3 _movementDirection = Vector3.zero;
+    #endregion
+
+    #region references
     private Transform _myTransform;
+    //private Rigidbody2D _myRigidbody;
     #endregion
 
     #region methods
@@ -25,6 +29,7 @@ public class CharacterMovementController : MonoBehaviour
     void Start()
     {
         _myTransform = transform;
+        //_myRigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
