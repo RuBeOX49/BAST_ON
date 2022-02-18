@@ -31,5 +31,6 @@ public class CharacterMovementController : MonoBehaviour
     void Update()
     {
         _myTransform.Translate(_movementDirection * _speedMovement * Time.deltaTime);
+        _movementDirection = Vector3.zero;
     }
 }
